@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+
+    <!-- Stylessheets -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/text-styles.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="container-lg p-4 p-sm-5 p-md-5 pd-lg-3 pd-xl-5">
+      <p class="mt-5">company compliances, agreements and policies</p>
+      <h1 class="heading mt-4">
+        Things you<br /><span class="gradient-text">need to know</span>
+      </h1>
+      <div
+        class="
+          row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4
+          g-4
+          mt-4
+        "
+      >
+        <div class="col hover-card" onclick="scrollToComplenceSection()">
+          <div class="card text-white border-0">
+            <img src="assets/compliences.png" class="card-img" alt="..." />
+            <div class="card-img-overlay p-4">
+              <h5 class="card-title mt-2">Compliences</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-card" onclick="scrollToPoliciesSection()">
+          <div class="card bg-dark text-white border-0">
+            <img src="assets/policies.png" class="card-img" alt="..." />
+            <div class="card-img-overlay p-4">
+              <h5 class="card-title mt-2">Policies</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col hover-card" onclick="scrollToAgreementsSection()">
+          <div class="card bg-dark text-white border-0">
+            <img src="assets/agreements.png" class="card-img" alt="..." />
+            <div class="card-img-overlay p-4">
+              <h5 class="card-title mt-2">Agreements</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-lg p-4 p-sm-5 p-md-5 pd-lg-3 pd-xl-5 div-bg">
+      <div
+        id="compliance"
+        class="row row-cols-1 row-cols-md-2 align-items-center section-height"
+      >
+        <div class="col align-content-center order-1 order-md-0">
+          <h1 class="heading-4">Company<br />Compliances</h1>
+          <p class="mt-4">
+            Our products regularly undergo independent verification of their
+            security, privacy, and compliance controls, achieving
+            certifications, attestations, and audit reports to demonstrate
+            compliance. We’ve also created resource documents and mappings for
+            compliance support when formal certifications or attestations may
+            not be required or applied.
+          </p>
+          <button class="btn btn-primary btn-lg ps-4 pe-4 mt-4">
+            Read More
+          </button>
+        </div>
+        <div class="col order-0 order-md-1 p-md-5">
+          <img
+            src="assets/compliences-art.png"
+            class="w-100 mt-5 mt-md-0"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        id="policies"
+        class="row row-cols-1 row-cols-md-2 align-items-center section-height"
+      >
+        <div class="col order-0 order-md-0 p-md-5">
+          <img
+            src="assets/policies-art.png"
+            class="w-100 mt-5 mt-md-0"
+            alt=""
+          />
+        </div>
+        <div class="col align-content-center p-md-5 order-1 order-md-1">
+          <h1 class="heading-4">Company<br />Policies</h1>
+          <p class="mt-4">
+            When you use our services, you’re trusting us with your information.
+            We understand this is a big responsibility and work hard to protect
+            your information and put you in control. This Privacy Policy is
+            meant to help you understand what information we collect, why we
+            collect it, and how you can update, manage, export, and delete your
+            information.
+          </p>
+          <button class="btn btn-primary btn-lg ps-4 pe-4 mt-4">
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="agreements"
+        class="row row-cols-1 row-cols-md-2 align-items-center section-height"
+      >
+        <div class="col align-content-center order-1 order-md-0">
+          <h1 class="heading-4">Company<br />Agreements</h1>
+          <p class="mt-4">
+            Our products regularly undergo independent verification of their
+            security, privacy, and compliance controls, achieving
+            certifications, attestations, and audit reports to demonstrate
+            compliance. We’ve also created resource documents and mappings for
+            compliance support when formal certifications or attestations may
+            not be required or applied.
+          </p>
+          <button class="btn btn-primary btn-lg ps-4 pe-4 mt-4">
+            Read More
+          </button>
+        </div>
+        <div class="col order-0 order-md-1 p-md-5">
+          <img
+            src="assets/agreements-art.png"
+            class="w-100 mt-5 mt-md-0"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+  </body>
+</html>
